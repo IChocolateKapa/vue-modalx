@@ -119,9 +119,9 @@
         background: #fff;
         border-bottom-left-radius: 3px;
         border-bottom-right-radius: 3px;
-        button {
-            margin-right: 5px;
-        }
+    }
+    .modal-foot button {
+        margin-right: 5px;
     }
     .modal-close {
         position: absolute;

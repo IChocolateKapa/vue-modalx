@@ -1,6 +1,6 @@
 {
   "name": "vue-modalx",
-  "version": "1.0.2",
+  "version": "1.0.7",
   "description": "simple modal vue component",
   "main": "Modal.vue",
   "scripts": {
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IChocolateKapa/vue-modal.git"
+    "url": "git+https://github.com/IChocolateKapa/vue-modalx.git"
   },
   "author": "IChocolateKapa <echochocolatekapa@163.com> (https://github.com/IChocolateKapa/)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/IChocolateKapa/vue-modal/issues"
+    "url": "https://github.com/IChocolateKapa/vue-modalx/issues"
   },
-  "homepage": "https://github.com/IChocolateKapa/vue-modal#readme"
+  "homepage": "https://github.com/IChocolateKapa/vue-modalx#readme"
 }

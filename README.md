@@ -12,6 +12,15 @@ in your vue component:
     <button @click="options.show = true"></button>
     
     <Modal :options="options"></Modal>
+    
+    <Modal :options="options">
+      <h4>Modal Body Part</h4>
+      <div>
+        write whatever you like :)
+      </div>
+      
+    </Modal>
+    
   </div>
 </template>
 
@@ -49,5 +58,6 @@ in your vue component:
   
 </script>
 ```
-  
+
+You can also use it in your render function :)
 
