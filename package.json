@@ -1,0 +1,19 @@
+{
+  "name": "vue-modal",
+  "version": "1.0.0",
+  "description": "simple modal vue component",
+  "main": "Modal.vue",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IChocolateKapa/vue-modal.git"
+  },
+  "author": "IChocolateKapa <echochocolatekapa@163.com> (https://github.com/IChocolateKapa/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IChocolateKapa/vue-modal/issues"
+  },
+  "homepage": "https://github.com/IChocolateKapa/vue-modal#readme"
+}
