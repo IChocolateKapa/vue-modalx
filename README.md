@@ -16,7 +16,7 @@ in your vue component:
 </template>
 
 
-<style>
+<script>
 
   import Modal from 'vue-modalx'
 
@@ -47,7 +47,7 @@ in your vue component:
     }
   }
   
-</style>
+</script>
 ```
   
 
