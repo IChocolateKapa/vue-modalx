@@ -6,7 +6,7 @@
 
 in your vue component:
 
-```
+```javascript
 <template>
   <div>
     <button @click="options.show = true"></button>
