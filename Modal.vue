@@ -18,7 +18,7 @@
 						'btn-default': options.theme == 'default',
 						 'btn-info': options.theme == 'info' }"
                                 @click.stop="options.onOkHandler()">{{options.okText}}</button>
-                        <button class="btn btn-default" @click.stop="options.onCancleHandler()">关闭</button>
+                        <button class="btn btn-default" @click.stop="options.onCancleHandler()">{{options.cancleText}}</button>
                     </div>
                 </div>
             </div>
@@ -155,12 +155,12 @@
         left: 0;
         right: 10px;
         text-align: right;
-        button {
-            margin-right: 2px;
-        }
+    }
+    .modalx.confirm .modal-body .buttons  button{
+        margin-right: 2px;
     }
 
-    .btn{
+    .btn {
         display: inline-block;
         padding: 6px 12px;
         margin-bottom: 0;
@@ -180,37 +180,42 @@
         background-image: none;
         border: 1px solid transparent;
         border-radius: 4px;
-        &.btn-default{
-             color: #333;
-             background-color: #fff;
-             border-color: #ccc;
-        }
+    }
+    .btn.btn-default {
+        color: #333;
+        background-color: #fff;
+        border-color: #ccc;
+    }
 
-        &.btn-danger {
-             color: #fff;
-             background-color: #d9534f;
-             border-color: #d43f3a;
-         }
-        &.btn-primary {
-             color: #fff;
-             background-color: #337ab7;
-             border-color: #2e6da4;
-         }
-        &.btn-success {
-              color: #fff;
-              background-color: #5cb85c;
-              border-color: #4cae4c;
-        }
-        &.btn-warning {
-             color: #fff;
-             background-color: #f0ad4e;
-             border-color: #eea236;
-        }
-        &.btn-info {
-             color: #fff;
-             background-color: #5bc0de;
-             border-color: #46b8da;
-        }
+    .btn.btn-danger {
+        color: #fff;
+        background-color: #d9534f;
+        border-color: #d43f3a;
+    }
+
+    .btn.btn-primary {
+        color: #fff;
+        background-color: #337ab7;
+        border-color: #2e6da4;
+    }
+
+    .btn.btn-success {
+        color: #fff;
+        background-color: #5cb85c;
+        border-color: #4cae4c;
+    }
+
+    .btn.btn-warning {
+        color: #fff;
+        background-color: #f0ad4e;
+        border-color: #eea236;
+    }
+
+    .btn.btn-info {
+         color: #fff;
+         background-color: #5bc0de;
+         border-color: #46b8da;
+     }
 
 
 </style>
@@ -218,20 +223,6 @@
 <script>
 
 	'use strict';
-/*
-
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-
-	var _moment = require('moment');
-
-	var _moment2 = _interopRequireDefault(_moment);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-*/
-
-
 	export default {
 		name: 'ModalX',
 		props: {
@@ -244,12 +235,13 @@
 			return {
 				defOpts: {
 					show: false,
-					title: '模态框标题',
+					title: 'Modal Title',
 					width: '500',
 					backdrop: 'normal',
 					showCloseIcon: false,
 					showOk: true,
-					okText: '确定',
+					okText: 'OK',
+					cancleText: 'Cancle',
 					showBody: true,
 					showFooter: true,
 					showHead: true,
