@@ -11,7 +11,7 @@ in your vue component:
   <div>
     <button @click="options.show = true"></button>
     
-    <Modal :options="options"></Modal>
+    <!--<Modal :options="options"></Modal>-->
     
     <Modal :options="options">
       <h4>Modal Body Part</h4>
